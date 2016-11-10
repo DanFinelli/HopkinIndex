@@ -311,7 +311,10 @@ $.getJSON("https://raw.githubusercontent.com/ect123/boston-atlas-footprints/mast
       _1874_vol2 = L.geoJson(data, {onEachFeature: onEachFeature_1874_vol2, pane: 'pane250'}).addTo(map);
       });
 
-
+var _1874_vol3;
+$.getJSON("https://raw.githubusercontent.com/DanFinelli/HopkinIndex/master/EDITED_index-hopkins-1874-vol3.geojson",function(data){
+      _1874_vol3 = L.geoJson(data, {onEachFeature: onEachFeature_1874_vol3, pane: 'pane252'}).addTo(map);
+      });
 
 var _1874_vol4;
 $.getJSON("https://raw.githubusercontent.com/DanFinelli/HopkinIndex/master/EDITED_index-hopkins-1874-vol4.geojson",function(data){
